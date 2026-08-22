@@ -66,7 +66,7 @@ module "nexus_mail_config" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
-| <a name="requirement_nexus"></a> [nexus](#requirement\_nexus) | >= 2.0.0 |
+| <a name="requirement_nexus"></a> [nexus](#requirement\_nexus) | >= 3.0.0 |
 
 ### Providers
 
@@ -99,3 +99,40 @@ No resources.
 ## Authors
 
 Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/nexus-module/terraform-nexus-mail/graphs/contributors).
+
+<!-- BEGIN_TF_DOCS -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
+| <a name="requirement_nexus"></a> [nexus](#requirement\_nexus) | >= 3.0.0 |
+
+## Providers
+
+No providers.
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_nexus_mail_config"></a> [nexus\_mail\_config](#module\_nexus\_mail\_config) | ./modules/nexus-mail-config | n/a |
+
+## Resources
+
+No resources.
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_nexus_mail_config"></a> [nexus\_mail\_config](#input\_nexus\_mail\_config) | Mail Config. | <pre>list(object({<br>    port                      = number<br>    host                      = string<br>    from_address              = string<br>    enabled                   = optional(bool)<br>    username                  = optional(string)<br>    password                  = optional(string)<br>    subject_prefix            = optional(string)<br>    start_tls_enabled         = optional(bool)<br>    start_tls_required        = optional(bool)<br>    ssl_on_connect_enabled    = optional(bool)<br>    nexus_trust_store_enabled = optional(bool)<br>  }))</pre> | `[]` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_from_address"></a> [from\_address](#output\_from\_address) | From address |
+| <a name="output_host"></a> [host](#output\_host) | Host |
+| <a name="output_port"></a> [port](#output\_port) | Port |
+<!-- END_TF_DOCS -->
