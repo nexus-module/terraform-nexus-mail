@@ -64,3 +64,9 @@ variable "nexus_trust_store_enabled" {
   type        = bool
   default     = null
 }
+
+variable "ssl_server_identity_check_enabled" {
+  description = "Whether to verify the server identity when connecting over SSL/TLS"
+  type        = bool
+  default     = null
+}
