@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0](https://github.com/nexus-module/terraform-nexus-mail/compare/v1.2.0...v1.3.0) (2026-10-03)
+
+
+### Features
+
+* add tests and submodules ([886b32e](https://github.com/nexus-module/terraform-nexus-mail/commit/886b32ec76dce39bbb26c2916eaac526785aa4dd))
+
+
+### Bug Fixes
+
+* **deps:** bump datadrivers/nexus ([#21](https://github.com/nexus-module/terraform-nexus-mail/issues/21)) ([bbe8293](https://github.com/nexus-module/terraform-nexus-mail/commit/bbe8293986b6edb28e2eafc8af2c381c9ec1131d))
+
 ## [1.2.0](https://github.com/nexus-module/terraform-nexus-mail/compare/v1.1.0...v1.2.0) (2026-08-22)
 
 
